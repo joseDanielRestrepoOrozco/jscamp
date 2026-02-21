@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultados de búsqueda</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./devjobs-avatar-element.js"></script>
+    <script type="module">
+      import React from 'https://esm.sh/react?dev'
+      import ReactDOM from 'https://esm.sh/react-dom/client?dev'
+      window.React = React
+      window.ReactDOM = ReactDOM
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      // componente de React
+      const JobCard = ({ titulo, empresa, location, description, data }) => {
+        const [isApplied, setIsApplied] = React.useState(false)
+
+        const text = isApplied ? 'Aplicado' : 'Aplicar'
+        const buttonClass = isApplied ? 'is-applied' : ''
+
+        return (
+          <article
+            className="job-item"
+            data-experience={data.nivel}
+            data-technologies={data.technologies}
+            data-modalidad={data.modalidad}
+            data-titulo={titulo}
+          >
+            <div>
+              <h4>{titulo}</h4>
+              <small>
+                {empresa} | {location}
+              </small>
+              <p>{description}</p>
+            </div>
+            <button
+              className={`button-apply-job ${buttonClass}`}
+              onClick={() => setIsApplied(!isApplied)}
+            >
+              {text}
+            </button>
+          </article>
+        )
+      }
+
+      const App = () => {
+        return (
+          <div className="jobs-listing">
+            <JobCard
+              titulo={'Python Developer'}
+              description={
+                'Estamos buscando un desarrollador python con experiencia en servicios y procesamiento de datos. Se requiere capacidad de analisis y resolucion de problemas.'
+              }
+              empresa={'DataSoft'}
+              location={'Ciudad de Mexico'}
+              data={{
+                modalidad: 'cdmx',
+                nivel: 'mid',
+                technologies: ['python', 'django', 'rest', 'postgresql']
+              }}
+            />
+          </div>
+        )
+      }
+
+      const rootEl = document.querySelector('#root')
+      const root = ReactDOM.createRoot(rootEl)
+
+      root.render(<App />)
+    </script>
+  </head>
+  <body>
+    <header>
+      <h2>DevJobs</h2>
+      <nav>
+        <a href="/">Inicio</a>
+        <a href="./empleos.html">Empleos</a>
+      </nav>
+
+      <div>
+        <devjobs-avatar
+          service="github"
+          username="joseDanielRestrepoOrozco"
+          size="40"
+        ></devjobs-avatar>
+      </div>
+    </header>
+    <main>
+      <section class="jobs-search">
+        <h1>React.js, primeros pasos</h1>
+      </section>
+      <section>
+        <h2>Empleos disponibles</h2>
+        <div id="root"></div>
+      </section>
+    </main>
+    <footer>
+      <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jose Daniel Restrepo Orozco</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09f" />
+    <!-- es la descripción que aparece debajo del titulo o enlace en los resultados del buscador -->
+    <meta
+      name="description"
+      content="Portfolio de Jose Restrepo, 1 año de experiencia en el desarrollo de software"
+    />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Portfolio de un ingeniero de sistemas" />
+    <meta
+      property="og:description"
+      content="Portfolio de jose restrepo, 1 año de experiencia como ingeniero de sistemas"
+    />
+    <meta property="og:image" content="./images/yo.jpeg" />
+    <meta property="og:image:alt" content="Una fotografía de Jose Restrepo" />
+
+    <!-- importante para SEO -->
+    <!-- le indica al navegador que es esta misma pagina pero traducida al ingles de reino unido -->
+    <link rel="alternate" href="https://joseres.dev/en" hreflang="en-GB" />
+    <!-- le indica al navegador cual de todas las paginas es la principal u original -->
+    <link rel="canonical" href="https://joseres.dev" />
+
+    <link rel="icon" href="./images/yo.jpeg" type="image/jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Portfolio de Jose Daniel</h1>
+      <!-- Es una etiqueta que permite embeber contenido de otras fuentes como videos, mapas, etc. -->
+      <!-- <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/Ie1yJDSN1xo?si=IJBKFL0b52HfQw3V"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe> -->
+
+      <nav>
+        <a class="link" href="#experiencia">Experiencia</a>
+        <a class="link" href="#proyectos">Proyectos</a>
+        <a
+          class="link"
+          href="https://www.linkedin.com/in/jose-restrepo-orozco-b125a7321/"
+          target="_blank"
+        >
+          linkedIn
+        </a>
+      </nav>
+    </header>
+
+    <!-- permite mostrar un video en la pagina web -->
+    <!-- <video
+      autoplay
+      muted
+      loop
+      src="./videos/sample_960x400_ocean_with_audio.mp4"
+      controls
+    ></video> -->
+
+    <main>
+      <p class="description">+1 año de experiencia en el desarrollo web</p>
+
+      <h2 id="experiencia">Experiencia</h2>
+
+      <ul>
+        <li class="list-item">Adevinta - 2022</li>
+        <li class="list-item">Hubii - 2020</li>
+        <li class="list-item">Nacencia - 2015</li>
+      </ul>
+      <img
+        width="200"
+        height="200"
+        title="foto de jose daniel"
+        src="./images/yo.jpeg"
+        alt="una fotografía de jose daniel restrepo con traje elegante sonriendo"
+      />
+      <aside>
+        <header>
+          <h3>Mis tecnologías favoritas</h3>
+        </header>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+        </ul>
+      </aside>
+      <button>Haz clic aquí</button>
+      <h2 id="proyectos">Proyectos realizados</h2>
+      <section>
+        <article>
+          <header>
+            <h4>Diagrama de Pareto</h4>
+          </header>
+          <p>
+            Desarrollo de un sitio web de la herramienta diagrama de Pareto con
+            una interfaz agradable
+          </p>
+          <footer>
+            <small>Tecnologías utilizadas: React, tailwind, shadCn, Node</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>matriz Vester</h4>
+          </header>
+          <p>
+            Desarrollo de una aplicación para ayuda de gestión de proyectos para
+            centrar recursos en problemas importantes
+          </p>
+          <footer>
+            <small>Tecnologías utilizadas: React, tailwind, shadCn, Node</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>MedCore</h4>
+          </header>
+          <p>
+            Aplicación web para un hospital pequeño o mediano para gestionar
+            pacientes, citas, diagnósticos, medicamentos y colas de pacientes
+          </p>
+          <footer>
+            <small>
+              Tecnologías utilizadas: React, tailwind, shadCn, ExpressJs
+            </small>
+          </footer>
+        </article>
+      </section>
+      <section>
+        <h2>Formulario de contacto</h2>
+        <form method="post" action="/">
+          <fieldset>
+            <legend>información personal</legend>
+            <label style="display: block">
+              Nombre:
+              <input
+                type="text"
+                name="name"
+                placeholder="Jose Daniel Restrepo"
+              />
+            </label>
+            <label style="display: block">
+              Email:
+              <input
+                type="email"
+                name="email"
+                placeholder="jose@example.com"
+                required
+              />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>información adicional</legend>
+            <label>
+              Teléfono:
+              <input type="tel" name="tel" placeholder="+57 333 1234567" />
+            </label>
+          </fieldset>
+          <!-- otro fieldset con por que quieres contactar: select, checkbox, datalist con los lenguajes de programacion para trabajar -->
+          <fieldset>
+            <legend>Motivo de contacto</legend>
+            <label style="display: block">
+              ¿Por qué quieres contactarme?
+              <select name="reason" required>
+                <option value="">Seleccione una opción</option>
+                <option value="job">Oportunidad laboral</option>
+                <option value="project">Colaboración en proyecto</option>
+                <option value="other">Otro</option>
+              </select>
+            </label>
+            <label style="display: block">
+              Lenguajes de programación:
+              <input list="languages" name="languages" />
+              <datalist id="languages">
+                <option value="JavaScript"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="C#"></option>
+                <option value="Ruby"></option>
+              </datalist>
+            </label>
+          </fieldset>
+          <button>Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      Copyright &copy; 2025 - El mejor portfolio del mundo mundial
+    </footer>
+  </body>
+</html>

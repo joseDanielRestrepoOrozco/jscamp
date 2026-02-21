@@ -1,0 +1,81 @@
+.container {
+  min-height: 100vh;
+  background-color: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+}
+
+.card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.card h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field label {
+  font-size: 0.85rem;
+  color: #cbd5f5;
+}
+
+.field input {
+  padding: 0.65rem;
+  border-radius: 6px;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.primaryButton {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  opacity: 0.9;
+}
+
+.footerText {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.footerText a {
+  color: #60a5fa;
+  text-decoration: none;
+}
