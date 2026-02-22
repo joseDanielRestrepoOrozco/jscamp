@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import jobs from './jobs.json' with {type: 'json'}
+import jobs from './jobs.json' with { type: 'json' }
 import DEFAULT from './configs.js'
 
 const PORT = process.env.PORT ?? DEFAULT.PORT
@@ -9,14 +9,16 @@ const app = express()
 
 const ACCEPTED_ORIGINS = ['http://localhost:3000', 'http://localhost:5173']
 
-app.use(cors({
+app.use(
+  cors({
     origin: (origin, callback) => {
-        if (ACCEPTED_ORIGINS.includes(origin)) {
-            return callback(null, true)
-        }
-        return callback(new Error('origin not allowed'))
-    }
-}))
+      if (ACCEPTED_ORIGINS.includes(origin)) {
+        return callback(null, true)
+      }
+      return callback(new Error('origin not allowed'))
+    },
+  }),
+)
 app.use(express.json())
 
 app.use((req, res, next) => {
@@ -30,22 +32,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/jobs', (req, res) => {
-  const {
-    text,
-    level,
-    limit = DEFAULT.LIMIT,
-    technology,
-    offset = DEFAULT.OFFSET
-  } = req.query
+  const { text, level, limit = DEFAULT.LIMIT, technology, offset = DEFAULT.OFFSET } = req.query
 
   let filteredJobs = jobs
 
   if (level) {
     const searchTerm = level.toLowerCase()
-    filteredJobs = filteredJobs.filter(
-      job =>
-        job.data.nivel.toLowerCase().includes(searchTerm)
-    )
+    filteredJobs = filteredJobs.filter(job => job.data.nivel.toLowerCase().includes(searchTerm))
   }
 
   if (text) {
@@ -53,7 +46,7 @@ app.get('/jobs', (req, res) => {
     filteredJobs = filteredJobs.filter(
       job =>
         job.titulo.toLowerCase().includes(searchTerm) ||
-        job.descripcion.toLowerCase().includes(searchTerm)
+        job.descripcion.toLowerCase().includes(searchTerm),
     )
   }
 
@@ -92,7 +85,7 @@ app.post('/jobs', (req, res) => {
     empresa,
     ubicacion,
     descripcion,
-    data
+    data,
   }
 
   jobs.push(newJob)
@@ -102,7 +95,7 @@ app.post('/jobs', (req, res) => {
 app.get('/health', (req, res) => {
   return res.json({
     status: 'ok',
-    uptime: process.uptime()
+    uptime: process.uptime(),
   })
 })
 

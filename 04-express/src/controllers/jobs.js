@@ -1,5 +1,5 @@
 import { DEFAULTS } from "../../config.js"
-import { JobModel } from "../src/models/job.js"
+import { JobModel } from "../models/job.js"
 
 export class JobController {
   static async getAll(req, res) {
