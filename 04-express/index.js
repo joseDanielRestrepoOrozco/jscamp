@@ -16,8 +16,8 @@ app.use(
         return callback(null, true)
       }
       return callback(new Error('origin not allowed'))
-    },
-  }),
+    }
+  })
 )
 app.use(express.json())
 
@@ -46,7 +46,7 @@ app.get('/jobs', (req, res) => {
     filteredJobs = filteredJobs.filter(
       job =>
         job.titulo.toLowerCase().includes(searchTerm) ||
-        job.descripcion.toLowerCase().includes(searchTerm),
+        job.descripcion.toLowerCase().includes(searchTerm)
     )
   }
 
@@ -85,7 +85,7 @@ app.post('/jobs', (req, res) => {
     empresa,
     ubicacion,
     descripcion,
-    data,
+    data
   }
 
   jobs.push(newJob)
@@ -95,7 +95,7 @@ app.post('/jobs', (req, res) => {
 app.get('/health', (req, res) => {
   return res.json({
     status: 'ok',
-    uptime: process.uptime(),
+    uptime: process.uptime()
   })
 })
 

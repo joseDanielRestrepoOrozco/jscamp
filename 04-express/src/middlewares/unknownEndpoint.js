@@ -1,5 +1,5 @@
 const unknownEndpoint = (_req, res) => {
-  res.status(404).send({ error: "unknown endpoint" })
+  res.status(404).send({ error: 'unknown endpoint' })
 }
 
 export default unknownEndpoint

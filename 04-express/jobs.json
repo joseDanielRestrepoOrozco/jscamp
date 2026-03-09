@@ -60,14 +60,7 @@
     "ubicacion": "Remoto",
     "descripcion": "Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube, automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS, Azure o GCP.",
     "data": {
-      "technology": [
-        "aws",
-        "azure",
-        "gcp",
-        "docker",
-        "kubernetes",
-        "terraform"
-      ],
+      "technology": ["aws", "azure", "gcp", "docker", "kubernetes", "terraform"],
       "modalidad": "remoto",
       "nivel": "mid-level"
     },
@@ -121,12 +114,7 @@
     "ubicacion": "Remoto",
     "descripcion": "Buscamos un especialista en ciberseguridad con conocimientos en protección de infraestructuras, análisis de vulnerabilidades y respuesta ante incidentes. Se valorará experiencia con SIEM y certificaciones de seguridad.",
     "data": {
-      "technology": [
-        "siem",
-        "penetration-testing",
-        "firewall",
-        "security-tools"
-      ],
+      "technology": ["siem", "penetration-testing", "firewall", "security-tools"],
       "modalidad": "remoto",
       "nivel": "mid-level"
     },
@@ -198,13 +186,7 @@
     "ubicacion": "Remoto",
     "descripcion": "Buscamos un ingeniero de machine learning con experiencia en modelos de predicción y procesamiento de datos. Se valorará conocimiento en TensorFlow, PyTorch y MLOps.",
     "data": {
-      "technology": [
-        "python",
-        "tensorflow",
-        "pytorch",
-        "scikit-learn",
-        "mlops"
-      ],
+      "technology": ["python", "tensorflow", "pytorch", "scikit-learn", "mlops"],
       "modalidad": "remoto",
       "nivel": "senior"
     },
@@ -348,13 +330,7 @@
     "ubicacion": "Remoto",
     "descripcion": "Arquitecto cloud senior con expertise en diseño de soluciones escalables en AWS, Azure o GCP. Certificaciones cloud altamente valoradas.",
     "data": {
-      "technology": [
-        "aws",
-        "azure",
-        "kubernetes",
-        "terraform",
-        "microservices"
-      ],
+      "technology": ["aws", "azure", "kubernetes", "terraform", "microservices"],
       "modalidad": "remoto",
       "nivel": "senior"
     },
@@ -408,12 +384,7 @@
     "ubicacion": "Remoto",
     "descripcion": "Especialista en pentesting para evaluar seguridad de aplicaciones web, móviles e infraestructura. Certificaciones OSCP o CEH deseables.",
     "data": {
-      "technology": [
-        "kali-linux",
-        "penetration-testing",
-        "security-tools",
-        "python"
-      ],
+      "technology": ["kali-linux", "penetration-testing", "security-tools", "python"],
       "modalidad": "remoto",
       "nivel": "mid-level"
     },
@@ -485,13 +456,7 @@
     "ubicacion": "Remoto",
     "descripcion": "Científico investigador en IA para desarrollar modelos de deep learning. PhD o Máster en IA/ML requerido. Publicaciones en conferencias valoradas.",
     "data": {
-      "technology": [
-        "python",
-        "tensorflow",
-        "pytorch",
-        "nlp",
-        "computer-vision"
-      ],
+      "technology": ["python", "tensorflow", "pytorch", "nlp", "computer-vision"],
       "modalidad": "remoto",
       "nivel": "senior"
     },
@@ -527,13 +492,7 @@
     "ubicacion": "Santiago de Chile",
     "descripcion": "SRE para garantizar disponibilidad y rendimiento de sistemas críticos. Experiencia con Kubernetes, monitoring, alerting y automatización.",
     "data": {
-      "technology": [
-        "kubernetes",
-        "prometheus",
-        "grafana",
-        "terraform",
-        "python"
-      ],
+      "technology": ["kubernetes", "prometheus", "grafana", "terraform", "python"],
       "modalidad": "santiago",
       "nivel": "senior"
     },
@@ -587,13 +546,7 @@
     "ubicacion": "Remoto",
     "descripcion": "Desarrollador blockchain para crear smart contracts y dApps. Experiencia con Solidity, Ethereum, Web3.js y frameworks como Hardhat o Truffle.",
     "data": {
-      "technology": [
-        "solidity",
-        "ethereum",
-        "web3",
-        "javascript",
-        "blockchain"
-      ],
+      "technology": ["solidity", "ethereum", "web3", "javascript", "blockchain"],
       "modalidad": "remoto",
       "nivel": "mid-level"
     },
@@ -647,12 +600,7 @@
     "ubicacion": "Remoto",
     "descripcion": "Redactor técnico para crear documentación de APIs, guías de usuario y tutoriales. Background técnico en desarrollo de software valorado.",
     "data": {
-      "technology": [
-        "markdown",
-        "git",
-        "api-documentation",
-        "technical-writing"
-      ],
+      "technology": ["markdown", "git", "api-documentation", "technical-writing"],
       "modalidad": "remoto",
       "nivel": "junior"
     },

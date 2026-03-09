@@ -1,7 +1,7 @@
-import jobs from "../../jobs.json" with { type: "json" }
+import jobs from '../../jobs.json' with { type: 'json' }
 
 export class JobModel {
-  static async getAll({ text, level, limit = 10, technology, offset = 0 }) {
+  static async getAll({ text, level, technology, type, limit = 10, offset = 0 }) {
     let filteredJobs = jobs
 
     if (level) {
@@ -9,12 +9,16 @@ export class JobModel {
       filteredJobs = filteredJobs.filter(job => job.data.nivel.toLowerCase().includes(searchTerm))
     }
 
+    if (type) {
+      filteredJobs = filteredJobs.filter(job => job.ubicacion.toLowerCase().includes(type))
+    }
+
     if (text) {
       const searchTerm = text.toLowerCase()
       filteredJobs = filteredJobs.filter(
         job =>
           job.titulo.toLowerCase().includes(searchTerm) ||
-          job.descripcion.toLowerCase().includes(searchTerm),
+          job.descripcion.toLowerCase().includes(searchTerm)
       )
     }
 
@@ -22,12 +26,11 @@ export class JobModel {
       filteredJobs = filteredJobs.filter(job => job.data.technology.includes(technology))
     }
 
-    const limitNumber = Number(limit)
-    const offsetNumber = Number(offset)
+    const paginatedJobs = filteredJobs.slice(offset, offset + limit)
 
-    const paginatedJobs = filteredJobs.slice(offsetNumber, offsetNumber + limitNumber)
+    const total = filteredJobs.length
 
-    return paginatedJobs
+    return { jobs: paginatedJobs, total }
   }
 
   static async getById(id) {
@@ -42,7 +45,7 @@ export class JobModel {
       empresa,
       ubicacion,
       data,
-      content,
+      content
     }
 
     jobs.push(newJob) // lo haremos en una base de datos con un INSERT
@@ -50,19 +53,20 @@ export class JobModel {
     return newJob
   }
 
-  static async update(id, { titulo, empresa, ubicacion, data }) {
+  static async update(id, { titulo, descripcion, empresa, ubicacion, data }) {
     const jobIndex = jobs.findIndex(job => job.id === id)
 
-    if (jobIndex === -1) return
+    if (jobIndex === -1) return null
 
     const oldJob = jobs[jobIndex]
 
     const updatedJob = {
-      titulo: titulo ?? oldJob["titulo"],
-      empresa: empresa ?? oldJob["empresa"],
-      ubicacion: ubicacion ?? oldJob["ubicacion"],
-      data: data ?? oldJob["data"],
-      content: oldJob["content"],
+      ...oldJob,
+      titulo: titulo ?? oldJob.titulo,
+      descripcion: descripcion ?? oldJob.descripcion,
+      empresa: empresa ?? oldJob.empresa,
+      ubicacion: ubicacion ?? oldJob.ubicacion,
+      data: data ?? oldJob.data
     }
 
     jobs.splice(jobIndex, 1, updatedJob)
@@ -74,7 +78,7 @@ export class JobModel {
     const jobIndex = jobs.findIndex(job => job.id === id)
 
     if (jobIndex === -1) {
-      throw new Error("Job not found")
+      throw new Error('Job not found')
     }
 
     jobs.splice(jobIndex, 1)
