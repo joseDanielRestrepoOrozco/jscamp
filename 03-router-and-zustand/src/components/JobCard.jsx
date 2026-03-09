@@ -55,7 +55,7 @@ const JobCardApplyButton = ({ jobId }) => {
 const JobCard = ({ id, titulo, empresa, location, description, data }) => {
   return (
     <article
-      className="job-item"
+      className={styles.card}
       data-experience={data.nivel}
       data-technologies={data.technologies}
       data-modalidad={data.modalidad}

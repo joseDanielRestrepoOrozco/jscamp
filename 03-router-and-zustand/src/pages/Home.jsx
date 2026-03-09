@@ -42,7 +42,7 @@ const Home = () => {
               <path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0m18 11-6-6" />
             </svg>
             <input
-              type="text"
+              type="search"
               required
               name="search"
               placeholder="Buscar Empleos por titulo, habilidad o empresa"

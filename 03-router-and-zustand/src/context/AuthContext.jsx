@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   return <AuthContext value={value}>{children}</AuthContext>
 }
 
-export default  useAuth = () => {
+const useAuth = () => {
   const context = useContext(AuthContext)
 
   if (context === undefined) {
@@ -31,3 +31,5 @@ export default  useAuth = () => {
 
   return context
 }
+
+export default useAuth
