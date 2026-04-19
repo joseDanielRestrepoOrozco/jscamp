@@ -6,6 +6,7 @@ import useDetails from "../hooks/useDetails";
 import { useAuthStore } from "../store/authStore";
 import { useFavoritesStore } from "../store/favoritesStore";
 import { useAiSummary } from "../hooks/useAiSummary";
+import { Streamdown } from "streamdown";
 
 const JobSection = ({ title, content }) => {
   const html = snarkdown(content);
@@ -86,7 +87,8 @@ const AISummary = ({ jobId }) => {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Resumen IA</h2>
         <div className={styles.sectionContent}>
-          <p>{summary}</p>
+          {/* <p>{summary}</p> */}
+          <Streamdown isAnimating={loading}>{summary}</Streamdown>
         </div>
       </section>
     );

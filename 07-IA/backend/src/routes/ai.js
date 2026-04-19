@@ -83,6 +83,8 @@ aiRouter.get("/summary/:id", async (req, res) => {
       res.setHeader("Content-Type", "application/json");
       return res.status(500).json({ error: "Error generando resumen" });
     }
+    console.log(error);
+    
     return res.end();
   }
 });
