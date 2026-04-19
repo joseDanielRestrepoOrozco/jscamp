@@ -1,0 +1,194 @@
+[
+  {
+    "id": "11111111-1111-4111-8111-111111111111",
+    "titulo": "Frontend Developer",
+    "empresa": "Tech Solutions",
+    "ubicacion": "Ciudad de Mexico",
+    "descripcion": "Estamos buscando un desarrollador frontend con experiencia en la creacion de interfaces web modernas y accesibles. Se requiere conocimiento en frameworks javascript y buenas practicas de desarrollo.",
+    "data": {
+      "technologies": ["react", "javascript", "html", "css"],
+      "modalidad": "cdmx",
+      "nivel": "junior"
+    }
+  },
+  {
+    "id": "22222222-2222-4222-8222-222222222222",
+    "titulo": "Backend Developer",
+    "empresa": "CloudCorp",
+    "ubicacion": "Remoto",
+    "descripcion": "Buscamos un desarrollador backend con experiencia en la construcción de servicios robustos y escalables. Es necesario contar con conocimientos en arquitectura de software y bases de datos.",
+    "data": {
+      "technologies": ["java", "spring", "sql", "docker"],
+      "modalidad": "remoto",
+      "nivel": "mid"
+    }
+  },
+  {
+    "id": "33333333-3333-4333-8333-333333333333",
+    "titulo": "Fullstack Developer",
+    "empresa": "DevHouse",
+    "ubicacion": "Bogota",
+    "descripcion": "Estamos en busca de un desarrollador fullstack capaz de trabajar tanto en frontend como backend. Se valoran habilidades para resolver problemas y trabajar en equipo.",
+    "data": {
+      "technologies": ["javascript", "react", "nodejs", "mongodb"],
+      "modalidad": "bogota",
+      "nivel": "mid"
+    }
+  },
+  {
+    "id": "44444444-4444-4444-8444-444444444444",
+    "titulo": "Mobile Developer",
+    "empresa": "AppFactory",
+    "ubicacion": "Remoto",
+    "descripcion": "Buscamos un desarrollador movil con experiencia en aplicaciones android modernas. Es importante tener conocimientos en ciclos de vida de aplicaciones y buenas practicas de codigo.",
+    "data": {
+      "technologies": ["kotlin", "android", "gradle"],
+      "modalidad": "remoto",
+      "nivel": "junior"
+    }
+  },
+  {
+    "id": "55555555-5555-4555-8555-555555555555",
+    "titulo": "Software Engineer",
+    "empresa": "Innovatech",
+    "ubicacion": "Ciudad de Mexico",
+    "descripcion": "Estamos buscando un ingeniero de software con experiencia en el diseno de soluciones empresariales. Se requiere capacidad para analizar requerimientos y proponer soluciones tecnicas.",
+    "data": {
+      "technologies": ["java", "spring", "microservices", "aws"],
+      "modalidad": "cdmx",
+      "nivel": "senior"
+    }
+  },
+  {
+    "id": "66666666-6666-4666-8666-666666666666",
+    "titulo": "Api Developer",
+    "empresa": "InfraTech",
+    "ubicacion": "Bogota",
+    "descripcion": "Buscamos un desarrollador de apis con experiencia en integraciones y servicios web. Es necesario contar con conocimientos en seguridad y manejo de datos.",
+    "data": {
+      "technologies": ["python", "fastapi", "rest", "oauth"],
+      "modalidad": "bogota",
+      "nivel": "mid"
+    }
+  },
+  {
+    "id": "77777777-7777-4777-8777-777777777777",
+    "titulo": "Data Engineer",
+    "empresa": "DataWorks",
+    "ubicacion": "Remoto",
+    "descripcion": "Estamos buscando un ingeniero de datos con experiencia en el manejo de grandes volumenes de informacion. Se requiere conocimiento en procesamiento y transformacion de datos.",
+    "data": {
+      "technologies": ["python", "spark", "airflow", "sql"],
+      "modalidad": "remoto",
+      "nivel": "mid"
+    }
+  },
+  {
+    "id": "88888888-8888-4888-8888-888888888888",
+    "titulo": "Frontend Engineer",
+    "empresa": "UILabs",
+    "ubicacion": "Bogota",
+    "descripcion": "Buscamos un frontend engineer con experiencia en la construccion de interfaces dinamicas. Se valoran buenas practicas de diseno y atencion al detalle.",
+    "data": {
+      "technologies": ["react", "typescript", "css", "storybook"],
+      "modalidad": "bogota",
+      "nivel": "senior"
+    }
+  },
+  {
+    "id": "99999999-9999-4999-8999-999999999999",
+    "titulo": "Junior Developer",
+    "empresa": "StartUpX",
+    "ubicacion": "Ciudad de Mexico",
+    "descripcion": "Estamos buscando un desarrollador junior con interes en aprender y crecer profesionalmente. Se requiere bases solidas en programacion y disposicion para trabajar en equipo.",
+    "data": {
+      "technologies": ["javascript", "git", "html", "css"],
+      "modalidad": "cdmx",
+      "nivel": "junior"
+    }
+  },
+  {
+    "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+    "titulo": "Senior Backend Engineer",
+    "empresa": "EnterpriseSoft",
+    "ubicacion": "Remoto",
+    "descripcion": "Buscamos un ingeniero backend senior con experiencia en sistemas de alto rendimiento. Se requiere capacidad para tomar decisiones tecnicas y liderar soluciones complejas.",
+    "data": {
+      "technologies": ["java", "spring", "kafka", "postgresql"],
+      "modalidad": "remoto",
+      "nivel": "senior"
+    }
+  },
+  {
+    "id": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+    "titulo": "Tech Lead",
+    "empresa": "NextGen",
+    "ubicacion": "Ciudad de Mexico",
+    "descripcion": "Estamos buscando un tech lead con experiencia liderando equipos de desarrollo. Se requiere fuerte criterio tecnico y habilidades de comunicacion.",
+    "data": {
+      "technologies": ["javascript", "nodejs", "aws", "architecture"],
+      "modalidad": "cdmx",
+      "nivel": "lead"
+    }
+  },
+  {
+    "id": "cccccccc-cccc-4ccc-8ccc-cccccccccccc",
+    "titulo": "Engineering Lead",
+    "empresa": "ScaleIT",
+    "ubicacion": "Bogota",
+    "descripcion": "Buscamos un engineering lead con experiencia en la coordinacion de equipos tecnicos. Es importante contar con vision estrategica y enfoque en resultados.",
+    "data": {
+      "technologies": ["python", "cloud", "microservices", "leadership"],
+      "modalidad": "bogota",
+      "nivel": "lead"
+    }
+  },
+  {
+    "id": "dddddddd-dddd-4ddd-8ddd-dddddddddddd",
+    "titulo": "React Developer",
+    "empresa": "WebStudio",
+    "ubicacion": "Remoto",
+    "descripcion": "Estamos buscando un desarrollador react con experiencia en aplicaciones web interactivas. Se requiere conocimiento en componentes reutilizables y manejo de estado.",
+    "data": {
+      "technologies": ["react", "redux", "javascript", "css"],
+      "modalidad": "remoto",
+      "nivel": "mid"
+    }
+  },
+  {
+    "id": "eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee",
+    "titulo": "Kotlin Developer",
+    "empresa": "MobileCorp",
+    "ubicacion": "Bogota",
+    "descripcion": "Buscamos un desarrollador kotlin con experiencia en aplicaciones android nativas. Se valoran conocimientos en arquitectura limpia y buenas practicas.",
+    "data": {
+      "technologies": ["kotlin", "android", "mvvm", "coroutines"],
+      "modalidad": "bogota",
+      "nivel": "senior"
+    }
+  },
+  {
+    "id": "ffffffff-ffff-4fff-8fff-ffffffffffff",
+    "titulo": "Python Developer",
+    "empresa": "DataSoft",
+    "ubicacion": "Ciudad de Mexico",
+    "descripcion": "Estamos buscando un desarrollador python con experiencia en servicios y procesamiento de datos. Se requiere capacidad de analisis y resolucion de problemas.",
+    "data": {
+      "technologies": ["python", "django", "rest", "postgresql"],
+      "modalidad": "cdmx",
+      "nivel": "mid"
+    }
+  },
+  {
+    "id": "12345678-1234-4123-8123-123456789abc",
+    "titulo": "Junior Frontend",
+    "empresa": "LaunchPad",
+    "ubicacion": "Remoto",
+    "descripcion": "Buscamos un frontend junior con interes en desarrollo web moderno. Se requiere conocimiento basico en interfaces y disposicion para aprender nuevas tecnologias.",
+    "data": {
+      "technologies": ["react", "html", "css", "javascript"],
+      "modalidad": "remoto",
+      "nivel": "junior"
+    }
+  }
+]
